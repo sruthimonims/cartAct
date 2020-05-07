@@ -1,0 +1,189 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*   Glyphicons halflings font   */
+
+@font-face {
+    font-family: "glyphicons-halflings-regular";
+     src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), 
+       url("../fonts/glyphicons-halflings-regular.woff") format("woff"), 
+       url("../fonts/glyphicons-halflings-regular.ttf")  format("truetype"),
+       url("../fonts/glyphicons-halflings-regular.svg#svgFontName") format("svg");
+}
+
+
+
+
+
+
+
+/*   Graphic font   */
+
+
+
+@font-face {
+  font-family: 'Graphik-Light-Web';
+  src: url('../fonts/Graphik-Light-Web.eot');
+  src: url('../fonts/Graphik-Light-Web.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Graphik-Light-Web.woff2') format('woff2'),
+       url('../fonts/Graphik-Light-Web.woff') format('woff');
+  font-weight:  300;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Graphik-Bold-Web';
+  src: url('../fonts/Graphik-Bold-Web.eot');
+  src: url('../fonts/Graphik-Bold-Web.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Graphik-Bold-Web.woff2') format('woff2'),
+       url('../fonts/Graphik-Bold-Web.woff') format('woff');
+  font-weight:  300;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+
+
+
+
+@font-face {
+  font-family: 'Graphik-Medium-Web';
+  src: url('../fonts/Graphik-Medium-Web.eot');
+  src: url('../fonts/Graphik-Medium-Web.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Graphik-Medium-Web.woff2') format('woff2'),
+       url('../fonts/Graphik-Medium-Web.woff') format('woff');
+  font-weight:  500;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+
+
+
+
+@font-face {
+  font-family: 'Graphik-Regular-Web';
+  src: url('../fonts/Graphik-Regular-Web.eot');
+  src: url('../fonts/Graphik-Regular-Web.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Graphik-Regular-Web.woff2') format('woff2'),
+       url('../fonts/Graphik-Regular-Web.woff') format('woff');
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*   Open Sans font   */
+
+@font-face {
+    font-family: "OpenSans-Regular";
+     src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), 
+       url("../fonts/OpenSans-Regular.woff") format("woff"), 
+       url("../fonts/OpenSans-Regular.ttf")  format("truetype"),
+       url("../fonts/OpenSans-Regular.svg#svgFontName") format("svg");
+}
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url("../fonts/OpenSans-Light.eot?#iefix") format("embedded-opentype"), 
+       url("../fonts/OpenSans-Light.woff") format("woff"), 
+       url("../fonts/OpenSans-Light.ttf")  format("truetype"),
+       url("../fonts/OpenSans-Light.svg#svgFontName") format("svg");
+}
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), 
+       url("../fonts/OpenSans-Bold.woff") format("woff"), 
+       url("../fonts/OpenSans-Bold.ttf")  format("truetype"),
+       url("../fonts/OpenSans-Bold.svg#svgFontName") format("svg");
+}
+@font-face {
+    font-family: "OpenSans-Semibold";
+    src: url("../fonts/OpenSans-Semibold.eot?#iefix") format("embedded-opentype"), 
+       url("../fonts/OpenSans-Semibold.woff") format("woff"), 
+       url("../fonts/OpenSans-Semibold.ttf")  format("truetype"),
+       url("../fonts/OpenSans-Semibold.svg#svgFontName") format("svg");
+}
+
+
+
+
+
+/* Roboto fonts */
+
+
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("../fonts/Roboto-Bold.ttf")  format("truetype");
+}
+
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("../fonts/Roboto-Light.ttf")  format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url("../fonts/Roboto-Medium.ttf")  format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../fonts/Roboto-Regular.ttf")  format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto-Thin";
+    src: url("../fonts/Roboto-Thin.ttf")  format("truetype");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

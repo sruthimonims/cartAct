@@ -1,0 +1,422 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shopping Cart</title>
+	<link rel="stylesheet" href="css/fonts.css">
+
+	<!-- FONT AWESOME CSS -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-slider.css">
+	<link rel="stylesheet" href="css/all.min.css">
+   <!----Custom CSS----->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/store.js" async></script>
+</head>
+
+<body>
+
+	<div id="container-wrapper" class="clearfix">
+       <!--------Header starts------->
+        <header>
+           <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-xs-2 lfsHeaderSection">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="col-md-6 col-xs-10 rfsHeaderSection">
+                   <input type="search" id="mySearch" placeholder="Search">
+                    <i class="far fa-search"></i>
+                    <a href="shoppingcartpage.html"><i class="far fa-shopping-cart">
+<!--                        <span>2</span>--><span class="total-count">0</span>
+                    </i>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </header>
+        <!--------Header ends------->
+        <!--------Body Section starts------->
+        <section class="shoppingHomePage">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="deskMiddleContent">
+                        <div class="lhsFilters">
+                            <p>Filters</p>
+                            <div class="price-slider">
+                                <div class="row">
+                                    <!-- Grid column -->
+                                    <div class="col-md-6 lhsText">
+                                       <i class="far fa-dollar-sign"></i>
+                                        <input type="number" value="100" min="0" max="120000" class="minrange">                                       
+                                    </div>
+                                    <!-- Grid column -->
+                                   
+                                    <!-- Grid column -->
+                                    <div class="col-md-6 rhsText">
+                                       <i class="far fa-dollar-sign"></i>
+                                        <input type="number" value="10000" min="0" max="120000" class="maxrange">                                       
+                                    </div>
+                                    <!-- Grid column -->
+                                </div>
+                                <input value="100" min="100" max="10000" type="range">
+                                <input value="10000" min="100" max="10000" type="range">
+                            </div>
+                            <h4>Price</h4>
+                            <button class="btn apply"><a href="">Apply</a></button>
+                        </div>
+                        
+                        <div class="rhsFilterBox">
+                            <div class="sortby">
+                                <h2>Sort By</h2>
+                                <ul class="navigationItems">
+                                    <li><a href="#" class="active">Price -- High Low</a></li>
+                                    <li><a href="#">Price -- Low High</a></li>
+                                    <li><a href="#">Discount</a></li>
+                                </ul>
+                            </div>
+                            <!---------------First Item List------------------->
+                            <div class="col-md-12 itemList">
+                                <div class="commonWidth">
+                                    <img class="shop-item-image" src="images/laptop.png">
+                                    <p class="shop-item-title">Item1</p>
+                                    <ul class="itemRate">
+                                        <li>$319</li>
+                                         <li class="shop-item-price">900</li>
+                                         <li>64% off</li>
+                                    </ul>
+                                    <button class="btn addtoCart shop-item-button"><a href="#" data-name="Item1" data-price="900">Add to Cart</a></button>
+                                </div>
+                                <div class="commonWidth">
+                                    <img class="shop-item-image" src="images/earphone.png">
+                                    <p class="shop-item-title">Item1</p>
+                                    <ul class="itemRate">
+                                        <li>$319</li>
+                                         <li class="shop-item-price">900</li>
+                                         <li>64% off</li>
+                                    </ul>
+                                    <button class="btn addtoCart shop-item-button"><a href="#" data-name="Item1" data-price="900">Add to Cart</a></button>
+                                </div>
+                                <div class="commonWidth">
+                                    <img class="shop-item-image" src="images/laptop.png">
+                                    <p class="shop-item-title">Item1</p>
+                                    <ul class="itemRate">
+                                        <li>$319</li>
+                                         <li class="shop-item-price">900</li>
+                                         <li>64% off</li>
+                                    </ul>
+                                    <button class="btn addtoCart shop-item-button"><a href="#">Add to Cart</a></button>
+                                </div>
+                                <div class="commonWidth">
+                                    <img class="shop-item-image" src="images/earphone.png">
+                                    <p class="shop-item-title">Item1</p>
+                                    <ul class="itemRate">
+                                        <li>$319</li>
+                                         <li>900</li>
+                                         <li>64% off</li>
+                                    </ul>
+                                    <button class="btn addtoCart shop-item-button"><a href="#">Add to Cart</a></button>
+                                </div>
+                                <div class="commonWidth" id="LastItemBox">
+                                     <img class="shop-item-image" src="images/laptop.png">
+                                     <p class="shop-item-title">Item1</p>
+                                    <ul class="itemRate">
+                                        <li>$319</li>
+                                         <li class="shop-item-price">900</li>
+                                         <li>64% off</li>
+                                    </ul>
+                                    <button class="btn addtoCart shop-item-button"><a href="#">Add to Cart</a></button>
+                                </div>
+                            </div>
+                            <!------------------Second Item List-------------------->
+                            <div class="col-md-12 itemList">
+                                <div class="commonWidth">
+                                    <img src="images/laptop.png">
+                                    <p>Item1</p>
+                                    <ul class="itemRate">
+                                        <li>$319</li>
+                                         <li class="shop-item-price">900</li>
+                                         <li>64% off</li>
+                                    </ul>
+                                    <button class="btn addtoCart"><a href="#">Add to Cart</a></button>
+                                </div>
+                                <div class="commonWidth">
+                                    <img src="images/earphone.png">
+                                    <p>Item1</p>
+                                    <ul class="itemRate">
+                                        <li>$319</li>
+                                         <li>900</li>
+                                         <li>64% off</li>
+                                    </ul>
+                                    <button class="btn addtoCart"><a href="#">Add to Cart</a></button>
+                                </div>
+                                <div class="commonWidth">
+                                    <img src="images/laptop.png">
+                                    <p>Item1</p>
+                                    <ul class="itemRate">
+                                        <li>$319</li>
+                                         <li>900</li>
+                                         <li>64% off</li>
+                                    </ul>
+                                    <button class="btn addtoCart"><a href="#">Add to Cart</a></button>
+                                </div>
+                                <div class="commonWidth">
+                                    <img src="images/earphone.png">
+                                    <p>Item1</p>
+                                    <ul class="itemRate">
+                                        <li>$319</li>
+                                         <li>900</li>
+                                         <li>64% off</li>
+                                    </ul>
+                                    <button class="btn addtoCart"><a href="#">Add to Cart</a></button>
+                                </div>
+                                <div class="commonWidth" id="LastItemBox">
+                                     <img src="images/laptop.png">
+                                     <p>Item1</p>
+                                    <ul class="itemRate">
+                                        <li>$319</li>
+                                         <li>900</li>
+                                         <li>64% off</li>
+                                    </ul>
+                                    <button class="btn addtoCart"><a href="#">Add to Cart</a></button>
+                                </div>
+                            </div>
+                            <!---------------Third Item List------------------->
+                            <div class="col-md-12 itemList" id="itemBottom">
+                                <div class="commonWidth">
+                                    <img src="images/laptop.png">
+                                    <p>Item1</p>
+                                    <ul class="itemRate">
+                                        <li>$319</li>
+                                         <li>900</li>
+                                         <li>64% off</li>
+                                    </ul>
+                                    <button class="btn addtoCart"><a href="#">Add to Cart</a></button>
+                                </div>
+                                <div class="commonWidth">
+                                    <img src="images/earphone.png">
+                                    <p>Item1</p>
+                                    <ul class="itemRate">
+                                        <li>$319</li>
+                                         <li>900</li>
+                                         <li>64% off</li>
+                                    </ul>
+                                    <button class="btn addtoCart"><a href="#">Add to Cart</a></button>
+                                </div>
+                                <div class="commonWidth">
+                                    <img src="images/laptop.png">
+                                    <p>Item1</p>
+                                    <ul class="itemRate">
+                                        <li>$319</li>
+                                         <li>900</li>
+                                         <li>64% off</li>
+                                    </ul>
+                                    <button class="btn addtoCart"><a href="#">Add to Cart</a></button>
+                                </div>
+                                <div class="commonWidth">
+                                    <img src="images/earphone.png">
+                                    <p>Item1</p>
+                                    <ul class="itemRate">
+                                        <li>$319</li>
+                                         <li>900</li>
+                                         <li>64% off</li>
+                                    </ul>
+                                    <button class="btn addtoCart"><a href="#">Add to Cart</a></button>
+                                </div>
+                                <div class="commonWidth" id="LastItemBox">
+                                     <img src="images/laptop.png">
+                                     <p>Item1</p>
+                                    <ul class="itemRate">
+                                        <li>$319</li>
+                                         <li>900</li>
+                                         <li>64% off</li>
+                                    </ul>
+                                    <button class="btn addtoCart"><a href="#">Add to Cart</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobMiddleContent">
+                        <div class="lhsMobFilter">
+                          <div class="lhsFirstSect">
+                              <ul class="sort">
+                                  <li><i class="fas fa-sort"></i></li>
+                                  <li data-toggle="modal" data-target="#sortPopup">Sort</li>
+                              </ul>
+                          </div>
+                          <!-- Filter Modal Popup -->
+                          <div class="modal fade" id="sortPopup" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h5 class="modal-title" id="staticBackdropLabel">Sort Options</h5>
+                                        
+                                      </div>
+                                      <div class="modal-body">
+                                          <div class="radiobut">
+                                              <label class="contains" id="contactChoice1">Price -- High Low
+                                                  <input type="radio" name="radio" checked>
+                                                  <span class="radiomark active"></span>
+                                              </label>
+                                          </div>
+                                               <div class="radiobut">
+                                              <label class="contains" id="contactChoice1">Price -- Low High
+                                                  <input type="radio" name="radio">
+                                                  <span class="radiomark active"></span>
+                                              </label>
+                                          </div>
+                                               <div class="radiobut">
+                                              <label class="contains" id="contactChoice1">Discount
+                                                  <input type="radio" name="radio">
+                                                  <span class="radiomark active"></span>
+                                              </label>
+                                          </div>
+                                      </div>
+                                      <div class="modal-footer">
+                                      <div class="cancel" data-dismiss="modal">Cancel</div>
+                                      <div class="apply">Apply</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="lhsFirstSect">
+                            <img src="images/laptop.PNG">
+                             <p>Item1</p>
+                                    <ul class="itemRate">
+                                        <li>$319</li>
+                                         <li>900</li>
+                                         <li>64% off</li>
+                                    </ul>
+                                    <button class="btn addtoCart"><a href="#">Add to Cart</a></button>
+                          </div>
+                          <div class="lhsFirstSect">
+                            <img src="images/laptop.PNG">
+                             <p>Item1</p>
+                                    <ul class="itemRate">
+                                        <li>$319</li>
+                                         <li>900</li>
+                                         <li>64% off</li>
+                                    </ul>
+                                    <button class="btn addtoCart"><a href="#">Add to Cart</a></button>
+                          </div>
+                          <div class="lhsFirstSect">
+                            <img src="images/laptop.PNG">
+                             <p>Item1</p>
+                                    <ul class="itemRate">
+                                        <li>$319</li>
+                                         <li>900</li>
+                                         <li>64% off</li>
+                                    </ul>
+                                    <button class="btn addtoCart"><a href="#">Add to Cart</a></button>
+                          </div>
+                        </div>
+                        <div class="rhsMobFilter">
+                           <div class="rhsFirstSect">
+                              <ul class="filters">
+                                  <li><i class="fas fa-filter"></i></li>
+                                  <li data-toggle="modal" data-target="#filterPopup">Filter</li>
+                              </ul>
+                          </div>
+                          <!-- Filter Modal Popup -->
+                          <div class="modal fade" id="filterPopup" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h5 class="modal-title" id="staticBackdropLabel">Filter Options</h5>
+                                        
+                                      </div>
+                                      <div class="modal-body">
+                                          <div class="Mobprice-slider">
+                                              <div class="row">
+                                                  <!-- Grid column -->
+                                                  <div class="col-xs-6 lhsText">
+                                                      <i class="far fa-dollar-sign"></i>
+                                                      <input type="number" value="100" min="0" max="120000" class="minrange">
+                                                  </div>
+                                                  <!-- Grid column -->
+
+                                                  <!-- Grid column -->
+                                                  <div class="col-xs-6 rhsText">
+                                                      <i class="far fa-dollar-sign"></i>
+                                                      <input type="number" value="10000" min="0" max="120000" class="maxrange">
+                                                  </div>
+                                                  <!-- Grid column -->
+                                              </div>
+                                              <input value="100" min="100" max="10000" type="range">
+                                              <input value="10000" min="100" max="10000" type="range">
+                                          </div>
+                                          <h4>Price</h4>
+                                      </div>
+                                      <div class="modal-footer">
+                                      <div class="cancel" data-dismiss="modal">Cancel</div>
+                                      <div class="apply">Apply</div>
+<!--
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          <button type="button" class="btn btn-primary">Understood</button>
+-->
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <div class="rhsFirstSect">
+                            <img src="images/earphone.PNG">
+                             <p>Item1</p>
+                                    <ul class="itemRate">
+                                        <li>$319</li>
+                                         <li>900</li>
+                                         <li>64% off</li>
+                                    </ul>
+                                    <button class="btn addtoCart"><a href="#">Add to Cart</a></button>
+                          </div>
+                          <div class="rhsFirstSect">
+                            <img src="images/earphone.PNG">
+                             <p>Item1</p>
+                                    <ul class="itemRate">
+                                        <li>$319</li>
+                                         <li>900</li>
+                                         <li>64% off</li>
+                                    </ul>
+                                    <button class="btn addtoCart"><a href="#">Add to Cart</a></button>
+                          </div>
+                          <div class="rhsFirstSect">
+                            <img src="images/earphone.PNG">
+                             <p>Item1</p>
+                                    <ul class="itemRate">
+                                        <li>$319</li>
+                                         <li>900</li>
+                                         <li>64% off</li>
+                                    </ul>
+                                    <button class="btn addtoCart"><a href="#">Add to Cart</a></button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+           <div class="container-fluid">
+               <div class="row">
+                   <div class="copyRights">@copyrights</div>
+               </div>
+            </div>
+        </footer>
+        <!--------Body Section ends------->
+    </div>		
+
+	<!-- Jquery -->
+	<script src="script/jquery.min.js"></script>
+	<script src="script/bootstrap-slider.js"></script>
+	<!-- Bootstrap script -->
+	<script src="script/popper.min.js"></script>
+	<script src="script/bootstrap.js"></script>
+	<!-- Custom script -->
+	<script src="script/script.js"></script>
+
+</body>
+
+</html>
